@@ -1,3 +1,4 @@
+# Exercise 0.5 solution
 ```mermaid
 sequenceDiagram
     participant B as Browser
