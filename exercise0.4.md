@@ -15,14 +15,14 @@ sequenceDiagram
     S-->>-B: HTML document
 
     B->>+S: GET https://studies.cs.helsinki.fi/exampleapp/main.css
-    S-->>-B: the css file
+    S-->>-B: The CSS file
 
     B->>+S: GET https://studies.cs.helsinki.fi/exampleapp/main.js
-    S-->>-B: the JavaScript file
-    Note right of B: The browser starts executing the JavaScript code that fetches the JSON from the server
+    S-->>-B: The JavaScript file
+    Note right of B: Browser executes JS code that fetches JSON from the server
 
     B->>+S: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-    S-->>-B: [{"content": "A new note","date": "2025-09-06T16:34:47.923Z"}, ...]
+    S-->>-B: [{"content": "note demo","date": "..."}, ...]
     Note right of B: The browser executes the callback function that renders the notes
 
     B-->>U: Display the updated notes
